@@ -642,8 +642,8 @@ def dns_record_from_dict(record_dict_list, scan_info, domain):
             try:
                 for k, v in r.items():
                     try:
-                        k = unicode(str(k))
-                        v = unicode(str(v))
+                        # k = unicode(str(k))
+                        # v = unicode(str(v))
                         elem.attrib[k] = v
                     except:
                         print_error("Could not convert key or value to unicode: '{0} = {1}'".format((repr(k)), (repr(v))))
